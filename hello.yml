@@ -1,0 +1,42 @@
+# no multiline comments in yaml  
+
+# key value pairs in yaml file
+
+"apple" : "this is a red fruit"
+1 : "this is a numerical data"
+
+# lists
+
+---
+
+-apple
+-mango
+-banana
+
+# block style
+# to differentiate between documents we have to use ---   
+
+---
+
+cities:
+ - new delhi
+ - ghaziabad
+ - kanpur
+
+
+---
+
+
+# using the flow mode in json files
+
+# lists
+cities: [delhi, mumbai]
+---
+
+# key-value pairs
+{mango: "red fruit" , banana : "yellow fruit"}
+
+
+
+
+# for ending a document put ...
