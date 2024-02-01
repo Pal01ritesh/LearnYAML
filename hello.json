@@ -1,7 +1,11 @@
 {
-    "cities": [
-      "new delhi",
-      "ghaziabad",
-      "kanpur"
-    ]
+  "cities": [
+    "new delhi",
+    "ghaziabad",
+    "kanpur"
+  ],
+  "fruits": {
+    "mango": "red fruit",
+    "banana": "yellow fruit"
   }
+}
