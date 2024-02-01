@@ -1,0 +1,46 @@
+                                                                             # multiple lines treated as a single line
+
+message: >
+ this will
+ be treated as 
+ a single line
+
+---
+
+message1: |
+ these multiple
+ lines can be considered under
+ the same variable.
+
+---
+
+
+message2: there always has to be a key value pair for data in yaml files.
+
+---
+
+# specifying the datatype
+
+# we have to use !! for specifying a datatype in yaml files
+
+zero: !!int 0
+positive: !!int 45
+negative: !!int -45
+
+# also binary values starts with 0b
+# hexadecimal values with 0
+# octal values with 0x
+
+
+binary: !!int 0b0010
+csv: !!int +540_000
+
+surname: !!null null
+~: this is a null key
+
+# date and time
+date: 22-12-2014
+
+
+date1: !!timestamp 2002-12-14
+exponential numbers: 3444E4

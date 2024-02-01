@@ -1,0 +1,87 @@
+sequence type data 
+
+student: !!seq
+ -marks
+ -name
+ -roll_no
+
+
+sparse seq = the seq in which some of the keys are empty
+
+---
+
+spare seq:
+ -hey
+ -how
+ -
+ -hello
+ -null
+
+
+
+# nested  sequence
+
+
+-
+ -mango
+ -banana
+ -graps
+-
+ -hello
+ -there
+ -everyone
+
+
+
+#  key value pairs are called maps
+!!maps
+
+#nested maps
+
+name: ritesh pal
+role: 
+ age: 89
+ role: student
+
+# same as
+
+
+
+name: ritesh pal
+role: {age: 89 , role: student}
+
+
+# pairs : key may have duplicate values
+# this will be a array of hash tables
+
+# while using this give a spce after the -
+
+pair example: !!pairs
+ - job: student
+ - job: nothing right now
+
+
+# this is same as
+# use [] brackets while using duplicate values
+
+pair example1: !!pairs [job: student, job: nothing to do]
+
+# !!set will allow you to use unique values
+
+names: !!set
+ ? kunal
+ ? dipesh
+ ? rishabh
+
+# dictionary !!omap
+
+people: !!omap
+ -rishabh:
+  name: rishabh
+  roll: 89
+ -dipesh:
+  name: dipesh
+  roll: 87
+
+
+

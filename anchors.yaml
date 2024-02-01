@@ -1,0 +1,17 @@
+# anchors are used for the same piece od code in yaml file again and again
+
+
+likings: &likes
+ fav fruit: mango
+ fav veg: chole
+
+person1:
+ name: Rishabh
+ <<: *likes
+
+
+
+person2:
+ name: rahul
+ <<: *likes
+ fav veg: bhindi
