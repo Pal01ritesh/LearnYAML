@@ -1,0 +1,11 @@
+YAML
+
+
+
+yaml ain't a markup language
+
+similar to xml and json datatypes
+
+only store data not commands
+
+yaml is case sensitive
